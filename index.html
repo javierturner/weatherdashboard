@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container-fluid header">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <div class="container-fluid allInfo">
+                <div class="sidePanel">
+                    <div class="form-group">
+                        <label for="searchBar">
+                            <h2>Search for a City</h3>
+                        </label>
+                        <input type="citySearch" class="form-control"
+                            placeholder="Show me the weather for... city, state, zip"><button
+                            class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="list-group" id="pastCities">
+                        <!-- APPEND PAST CITIES LIST AFTER SEARCH -->
+                        <div class="col-7">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                    data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list"
+                                    data-toggle="list" href="#list-profile" role="tab"
+                                    aria-controls="profile">Profile</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list"
+                                    data-toggle="list" href="#list-messages" role="tab"
+                                    aria-controls="messages">Messages</a>
+                                <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                    data-toggle="list" href="#list-settings" role="tab"
+                                    aria-controls="settings">Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="currentCity">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container-fluid">
+                            <h1 class="cityName">Some City</h1>
+                                <p id="temp">Temperature: </p>
+                                <p id="humidity">Humidity: </p>
+                                <p id="windSpeed">Wind Speed: </p>
+                                <p id="uv">UV Index: </p>
+
+
+
+                            <!-- WEATHER INFO FOR PAST CITIES TO APPEAR AFTER CITIES ARE CHOSEN -->
+                            <!-- <div class="col-7">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                        aria-labelledby="list-home-list">fjdskal fnemiwoq mfewiqo nfw</div>
+                                    <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                                        aria-labelledby="list-profile-list">fenwjqopu fjnewiondskajfdwqp fdlk;bs,dvnq pw
+                                    </div>
+                                    <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                        aria-labelledby="list-messages-list">abgdhfug </div>
+                                    <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                        aria-labelledby="list-settings-list">akeiorp[qnwfkdl;msak'pfi</div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <h2>5-Day Forecast</h2>
+                    <div class="card" id="day1" style="width: 10rem;">
+                        <div class="card-body forecastCards">
+                            <h5 class="card-title date">Some Date</h5>
+                            <img src="" alt="">
+                            <ul>Card ulnk</ul>
+                            <ul>Another ulnk</ul>
+                        </div>
+                    </div>
+
+                    <div class="card day" id="day2" style="width: 10rem;">
+                        <div class="card-body forecastCards">
+                            <h5 class="card-title date">Some Date</h5>
+                            <img src="" alt="">
+                            <ul>Card ulnk</ul>
+                            <ul>Another ulnk</ul>
+                        </div>
+                    </div>
+
+                    <div class="card" id="day3" style="width: 10rem;">
+                        <div class="card-body forecastCards">
+                            <h5 class="card-title date">Some Date</h5>
+                            <img src="" alt="">
+                            <ul>Card ulnk</ul>
+                            <ul>Another ulnk</ul>
+                        </div>
+                    </div>
+
+                    <div class="card" id="day4" style="width: 10rem;">
+                        <div class="card-body forecastCards">
+                            <h5 class="card-title date">Some Date</h5>
+                            <img src="" alt="">
+                            <ul>Card ulnk</ul>
+                            <ul>Another ulnk</ul>
+                        </div>
+                    </div>
+
+                    <div class="card" id="day5" style="width: 10rem;">
+                        <div class="card-body forecastCards">
+                            <h5 class="card-title date">Some Date</h5>
+                            <img src="" alt="">
+                            <ul>Card ulnk</ul>
+                            <ul>Another ulnk</ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
