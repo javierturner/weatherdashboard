@@ -1,25 +1,38 @@
-.allInfo {
+.title {
+    font-size: 50px;
+    text-align: right;
+    color: #BEE9E8;
+    background-color: #272838;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.showInfo {
     margin: auto;
     padding: 30px;
 }
 
-.sidePanel {
-    margin-top: 40px;
-    position: relative;
-    float: left;
-    padding: 10px;
-    width: 25%;
-}
-
 .currentCity {
-    float: left;
     padding: 10px;
     width: 75%;
 }
 
-.card {
-    float: left;
-    margin: 3px;
+.input {
+    border: 3px solid #272838;
 }
 
+#currentCity {
+    background-color: #BEE9E8;
+    color: #272838;
+}
 
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* button {
+    background-color: #272838;
+    border: round;
+} */
