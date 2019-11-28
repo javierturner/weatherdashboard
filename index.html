@@ -3,68 +3,58 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Weather Dashboard</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
-
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <div class="container-fluid header">
-                <h1>Weather Dashboard</h1>
+                <h1 class="title">
+                    Weather Dashboard
+                </h1>
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="container">
         <div class="col-md-10">
-            <div class="container-fluid allInfo">
-                <div class="sidePanel">
-                    <div class="form-group">
-                        <label for="searchBar">
-                            <h2>Search for a City</h3>
-                        </label>
-                        <input type="citySearch" class="form-control citySearched" id="searchHere"
-                            placeholder="San Francisco, Charlotte, Chicago..."><button
-                            class="btn btn-outline-secondary" id="searchBar" type="button"><i class="fas fa-search"></i></button>
-                    </div>
+            <h2>Search for a City</h2>
+            <div class="showInfo">
+                <div class="control">
+                    <input class="input" type="text" placeholder="San Francisco, Charlotte, Chicago..."
+                        id="inputCity">
                 </div>
+                <button id="submitButton">Search</button>
 
-                <div class="currentCity">
-                    <div class="jumbotron jumbotron-fluid">
-                        <div class="container-fluid">
-                            <div class="cityName"> </div>
-                            <div class="temp"> </div>
-                            <div class="humidity"> </div>
-                            <div class="windSpeed"> </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
+    </div>
+    <br>
+    <div id="currentCity" class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="showInfo" id="cityInfo">
+            </div>
+        </div>
+    </div>
 
 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+        crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="test.js"></script>
 
-
-        <script src="assets/script.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
 </body>
 
 </html>
