@@ -1,12 +1,16 @@
 .title {
-    font-size: 50px;
+    background-image: url(images/air-atmosphere-beautiful-blue-531972.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 70px;
     text-align: right;
-    color: #BEE9E8;
-    background-color: #272838;
-    padding: 10px;
+    color: #272727;
+    /* background-color: #272838; */
+    padding: 30px;
     margin-bottom: 10px;
+    border-bottom: 7px solid #272727;
 }
-
 
 .showInfo {
     margin: auto;
@@ -23,8 +27,12 @@
 }
 
 #currentCity {
-    background-color: #BEE9E8;
+    /* background-color: rgb(185, 185, 185); */
     color: #272838;
+    background-image: url(images/air-atmosphere-beautiful-blue-531972.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
@@ -32,7 +40,8 @@ h1 {
     font-weight: bold;
 }
 
-/* button {
+button {
     background-color: #272838;
+    color: white;
     border: round;
-} */
+}
