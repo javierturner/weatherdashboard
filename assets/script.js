@@ -1,7 +1,7 @@
 var hideInfo = document.getElementById("currentCity");
 hideInfo.style.display = "none";
 
-function showWeather(city) {
+function displayWeather (city) {
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + ",USA&units=imperial&appid=1f890b05c24ad48ca60b1cd075d3c1e7";
     $.ajax({
         url: queryURL,
@@ -33,5 +33,5 @@ function showWeather(city) {
 $("#submitButton").on("click", function (event) {
     event.preventDefault();
     var inputWeather = $("#citySearched").val().trim();
-    showWeather(inputWeather);
+    displayWeather(inputWeather);
 });
