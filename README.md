@@ -1,37 +1,37 @@
 # JT Turner's Weather Dashboard
 
-##Links to deployed application
+## Links to deployed application
 Github Pages: https://github.com/javierturner/weatherdashboard
 Deployed Application: https://javierturner.github.io/weatherdashboard/index.html
 
 
-##Installation
+## Installation
 
 There is no installation required for this project.
 
 
-##Usage
+## Usage
 
 The purpose of this was to demonstrate my understanding of using API's from other applications, such as the OpenWeather API.
 
 
-##Functionality
+## Functionality
 
 The website functions by allowing the user to search for a city. Upon clicking the "search" button, there is a function to grab that value, insert it into the URL to make the AJAX call, then display the information pulled from the response. 
 
 
-##Credits
+## Credits
 
 ° https://openweathermap.org/current#name
 
 
-##Screenshots of completed application
+## Screenshots of completed application
 
 ![Desktop_WeatherDashboard](assets/images/DesktopScreenshot.png)
 ![iPad Pro_WeatherDashboard](assets/images/iPadProScreenshot.png)
 
 
-##License
+## License
 
 MIT License
 
